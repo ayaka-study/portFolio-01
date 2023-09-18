@@ -1,0 +1,16 @@
+.l-main {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.l-main img {
+  width: 33.3333333333%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  flex-shrink: 0;
+}/*# sourceMappingURL=main.css.map */

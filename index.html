@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portFolio-01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Lato:wght@300&family=Noto+Sans+JP:wght@100;300&family=Roboto:wght@100&family=Source+Code+Pro:wght@500&family=Source+Sans+3&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/common.js" defer></script>
+</head>
+
+<body>
+  <header class="l-header" id="js-header">
+    <div class="l-header__logo">
+      <img src="./image/logo.svg" alt="ロゴ">
+    </div>
+    <div class="l-header__nav" id="js-nav">
+      <nav>
+        <ul>
+          <li><a href="#">TOP</a></li>
+          <li><a href="#information">INFORMATION</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#access">ACCESS</a></li>
+          <li><a href="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="l-header__hamburger" id="js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="l-main" id="js-main">
+    <img src="./image/mainvisual1.jpg" alt="メインビジュアル１">
+    <img src="./image/mainvisual2.jpg" alt="メインビジュアル２">
+    <img src="./image/mainvisual3.jpg" alt="メインビジュアル３">
+  </div>
+
+  <section class="p-body">
+    <h1 class="l-title--h1 p-fadein js-fadein">
+      Hello Flower!<br>FA EXHIBITION 2021
+    </h1>
+  </section>
+
+  <section class="p-body">
+    <div class="p-body__information p-fadein js-fadein">
+      <div class="l-inner">
+        <h2 class="l-title--h2">INFORMATION</h2>
+        <p class="p-body__information__date">2021 JUL 1(THU)-3(SAT)
+          <span class="p-body__information__time">DAY1 10am-6pm OTHER 10am-5:30pm</span>
+        </p>
+        <h3 class="p-body__information__place">at PARK SIDE HALL</h3>
+        <p class="p-body__information__date">2021年7月1日(木)ー3日(土)
+          <span class="p-body__information__time">Day1 10時〜18時　その他 10時〜17時30分</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-body">
+    <div class="l-inner">
+      <div class="p-body__gallery">
+        <h2 class="l-title--h2 p-fadein js-fadein">GALLERY</h2>
+        <div class="p-body__gallery--left p-fadein js-fadein">
+          <img src="./image/flower1.jpg">
+        </div>
+        <div class="p-body__gallery--right p-fadein js-fadein">
+          <img src="./image/flower2.jpg">
+        </div>
+        <div class="p-body__gallery--left p-fadein js-fadein">
+          <img src="./image/flower3.jpg">
+        </div>
+        <div class="p-body__gallery--right p-fadein js-fadein">
+          <img src="./image/flower4.jpg">
+        </div>
+        <div class="p-body__gallery--left p-fadein js-fadein">
+          <img src="./image/flower5.jpg">
+        </div>
+        <div class="p-body__gallery--right p-fadein js-fadein">
+          <img src="./image/flower6.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-body p-body--bg" id="js-access">
+    <div class="l-inner">
+      <div class="p-body__access">
+        <h2 class="l-title--h2">ACCESS</h2>
+        <h3 class="p-body__access__text">PARK SIDE HALL</h3>
+        <p class="p-body__access__address">〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
+          PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo</p>
+        <p class="p-body__access__contact">
+          Tel: 03-1111-1111<br>
+          E-mail: info@xxxxxxx.jp
+        </p>
+        <div class="p-body__access__contact--btn">
+          <a href="#">GOOGLE MAP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-body" id="js-contact">
+    <div class="l-inner">
+      <div class="p-body__contact">
+        <h2 class="l-title--h2">CONTACT</h2>
+        <div class="p-body__contact--btn">
+          <p><a href="#">出展に関するお問い合わせ</a></p>
+          <p><a href="#">その他のお問い合わせ</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="l-footer">
+    <div class="l-footer__inner">
+      <div class="l-footer__flex">
+        <div class="l-footer__address">
+          <p>FA EXHIBITION<br>
+            〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL
+            <br>
+            Tel: 03-1111-1111<br>
+            E-mail: info@xxxxxxx.jp
+          </p>
+          <ul class="l-footer__sns">
+            <li><a href="#" target="_blank">X</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="l-footer__smalltext">
+          <p><a href="#">PRIVACY POLICY</a></p>
+          <small>© FA EXHIBITION</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

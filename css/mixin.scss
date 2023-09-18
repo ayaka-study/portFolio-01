@@ -1,0 +1,46 @@
+//ブレイクポイントを指定
+
+$breakpoint: (
+  sp: 'screen and (max-width: 767px)',
+  tab: 'screen and (min-width: 768px)',
+  pc: 'screen and (min-width: 1025px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  letter-spacing: normal;
+  background-color: #000;
+}
+
+.l-inner {
+  max-width: 800px;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+//フォントカラー
+$fc-white : #fff;
+
+//背景カラー
+$bg-black: #000;

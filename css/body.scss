@@ -1,0 +1,177 @@
+body {
+  color: #fff;
+}
+
+.p-fadein {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.p-body {
+  padding-top: 100px;
+
+  @include mq(sp) {
+    padding-top: 80px;
+  }
+
+  &__information {
+    &__date {
+      font-size: 2.5rem;
+      margin-top: 30px;
+
+      @include mq(sp) {
+        margin-top: 20px;
+      }
+    }
+
+    &__time {
+      display: block;
+      font-size: 2rem;
+    }
+
+    &__place {
+      font-size: 3.5rem;
+      margin-top: 20px;
+    }
+  }
+
+  &__gallery {
+
+    &--left,
+    &--right {
+      width: 48%;
+      padding: 0 30px;
+
+      @include mq(sp) {
+        width: 100%;
+        padding: 0;
+      }
+
+      +div {
+        margin-top: 50px;
+      }
+    }
+
+    &--left {
+      margin-right: auto;
+    }
+
+    &--right {
+      margin-left: auto;
+    }
+  }
+
+  &--bg {
+    background: url(../image/bg.jpg) center center repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+  }
+
+  &__access {
+    position: relative;
+    z-index: 20;
+
+    &__text {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &__contact {
+      position: relative;
+      margin-top: 30px;
+      z-index: 20;
+
+      &--btn {
+        margin-top: 50px;
+
+        a {
+          border: 1px solid #fff;
+          text-decoration: none;
+          padding: 20px 80px;
+          display: inline-block;
+          transition: 0.3s;
+
+          &:hover {
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    &--btn {
+      p+p {
+        margin-top: 20px;
+      }
+
+      a {
+        display: inline-block;
+        border: 1px solid #fff;
+        width: 400px;
+        padding: 20px 40px;
+        position: relative;
+        text-decoration: none;
+        transition: 0.3s;
+
+        @include mq(sp) {
+          width: 280px;
+        }
+
+        &:before {
+          position: absolute;
+          content: "";
+          width: 120px;
+          height: 1px;
+          background-color: #fff;
+          right: -50px;
+          top: 50%;
+          transition: 0.3s;
+
+          @include mq(sp) {
+            content: none;
+          }
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          width: 15px;
+          top: 45%;
+          transform: rotate(25deg);
+          background-color: #fff;
+          height: 1px;
+          right: -50px;
+          transition: 0.3s;
+
+          @include mq(sp) {
+            content: none;
+          }
+        }
+
+        &:hover {
+          opacity: 0.7;
+
+          &::before {
+            right: -60px;
+          }
+
+          &::after {
+            right: -60px;
+          }
+        }
+      }
+    }
+  }
+}

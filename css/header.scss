@@ -1,0 +1,92 @@
+.l-header {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  z-index: 999;
+
+  &__logo {
+    position: fixed;
+    top: 35px;
+    left: 30px;
+    z-index: 40;
+  }
+
+  &__nav {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 0.6s;
+    z-index: 30;
+    padding: 80px 0 30px 0;
+
+    &.active {
+      display: block;
+      transform: translateY(0%);
+    }
+
+    li {
+      padding: 10px 0;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__hamburger {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 40;
+
+    span {
+      width: 30px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      left: 6px;
+      transition: 0.5s ease-in-out;
+
+      &:nth-child(1) {
+        top: 11px;
+      }
+
+      &:nth-child(2) {
+        top: 21px;
+      }
+
+      &:nth-child(3) {
+        top: 31px;
+      }
+    }
+
+    &.active {
+      span {
+        &:nth-child(1) {
+          top: 18px;
+          left: 6px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 30px;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          top: 30px;
+          left: 6px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30px;
+        }
+      }
+    }
+  }
+}

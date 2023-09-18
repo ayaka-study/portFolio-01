@@ -1,0 +1,14 @@
+.l-title--h1 {
+  font-size: 8rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+.l-title--h2 {
+  font-size: 5.5rem;
+  font-weight: normal;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  margin: 0 auto 50px;
+  text-align: center;
+}/*# sourceMappingURL=title.css.map */
